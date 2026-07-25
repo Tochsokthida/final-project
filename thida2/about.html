@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The story behind Ember Phnom Penh and how to get in touch with our candle studio." />
+    <title>About & Contact | Ember Phnom Penh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-wordmark" href="./index.html"><span>Ember</span><small>Phnom Penh</small></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#emberNav" aria-controls="emberNav" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-label">Menu</span><i class="bi bi-list ms-2"></i></button>
+        <div class="collapse navbar-collapse" id="emberNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tips.html">Candle tips</a></li>
+          </ul>
+          <div class="nav-actions"><a href="./login.html" aria-label="Sign in or create an account"><i class="bi bi-person"></i></a><a href="./cart.html" aria-label="View shopping cart"><i class="bi bi-bag"></i><span class="nav-cart-count" data-nav-cart-count hidden>0</span></a></div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-hero">
+        <div class="container-fluid px-0"><div class="row g-0 min-vh-75">
+          <div class="col-lg-6 about-hero__copy"><div><p class="eyebrow">Our story</p><h1>A softer pace,<br />poured by hand.</h1><p>Ember began with a simple wish: to make the everyday pause feel as precious as the celebration.</p></div></div>
+          <div class="col-lg-6 about-hero__image"><img src="./public/images/candle-collection.jpg" alt="A glowing candle in a warm evening setting" /></div>
+        </div></div>
+      </section>
+
+      <section class="section-pad bg-sand">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-4"><p class="eyebrow">Born in Phnom Penh</p><h2 class="display-heading">Scent, memory, place.</h2></div>
+            <div class="col-lg-6 offset-lg-1 story-copy">
+              <p class="lead-copy">Ember began with a passion for creating handcrafted candles that bring comfort, warmth, and beautiful scents into everyday spaces.</p>
+              <p>We kept returning to the same feeling: the city cooling after sunset, jasmine carrying through an open window, the hush that arrives once the day lets go. Those small moments became our scent library.</p>
+              <p>Today, every candle is still made in small batches, finished by hand, and designed to become part of your own memory of home.</p>
+            </div>
+          </div>
+          <div class="values-grid">
+            <article><span>01</span><h3>Thoughtfully sourced</h3><p>Plant-based wax, cotton wicks, and fragrances selected for a clean, balanced burn.</p></article>
+            <article><span>02</span><h3>Made in small batches</h3><p>We pour slowly and cure carefully, so each scent opens with depth and clarity.</p></article>
+            <article><span>03</span><h3>Rooted right here</h3><p>Proudly handcrafted in Phnom Penh, Cambodia, every Ember candle is a locally made</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container"><div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow text-light">Contact the studio</p>
+            <h2>We’d love to hear what you’re dreaming up.</h2>
+            <p class="contact-section__intro">Ask about a scent, a gift, a stockist order, or a private candle-pouring session.</p>
+            <div class="contact-details">
+              <a href="mailto:hello@emberphnompenh.com"><span>Email</span> hello@emberphnompenh.com</a>
+              <p><span>Studio</span> Phnom Penh, Cambodia</p>
+              <p><span>Hours</span> Tuesday–Sunday, 10:00–18:00</p>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <form class="contact-form">
+              <div class="row g-4">
+                <div class="col-md-6"><label for="name">Your name</label><input id="name" name="name" type="text" required /></div>
+                <div class="col-md-6"><label for="email">Email address</label><input id="email" name="email" type="email" required /></div>
+                <div class="col-12"><label for="subject">What is this about?</label><select id="subject" name="subject" required><option value="" disabled selected>Select a subject</option><option>Product question</option><option>Gifting & custom orders</option><option>Wholesale & stockists</option><option>Studio visit</option><option>Something else</option></select></div>
+                <div class="col-12"><label for="message">Your message</label><textarea id="message" name="message" rows="5" placeholder="Tell us a little about what you need..." required></textarea></div>
+                <div class="col-12"><button class="btn btn-ember btn-ember--light w-100" type="submit">Prepare my message <span>→</span></button></div>
+                <p class="contact-form-status mb-0" tabindex="-1" role="status" hidden>Your email app should open with your note prepared.</p>
+              </div>
+            </form>
+          </div>
+        </div></div>
+      </section>
+
+      <section class="newsletter"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-6"><p class="eyebrow">Notes from the studio</p><h2>For scent stories, slow rituals, and first light on new pours.</h2></div><div class="col-lg-5 offset-lg-1"><form class="newsletter-form"><label class="visually-hidden" for="about-email">Email address</label><input id="about-email" type="email" placeholder="Your email address" required /><button type="submit">Join us <span>→</span></button></form><p class="newsletter__fine">Occasional letters only. No noise, no clutter.</p></div></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container"><div class="row g-5">
+      <div class="col-lg-5"><a class="brand-wordmark brand-wordmark--footer" href="./index.html"><span>Ember</span><small>Phnom Penh</small></a><p class="footer-mantra">Hand-poured light for soft rooms and slower evenings.</p></div>
+      <div class="col-6 col-lg-2 offset-lg-1"><p class="footer-title">Explore</p><a href="./shop.html">Shop all</a><a href="./about.html">Our story</a><a href="./tips.html">Candle care</a></div>
+      <div class="col-6 col-lg-2"><p class="footer-title">Visit</p><span>#608 N38 Phnom Penh</span><a href="mailto:hello@emberphnompenh.com">Email us</a><a href="https://www.instagram.com/opalite_candle?igsh=bXlmcDhpZjU5ZnZu&utm_source=qr" target="_blank" rel="noreferrer">Instagram</a></div>
+      <div class="col-lg-2"><p class="footer-title">Open</p><span>Tue–Sun</span><span>10:00–18:00</span></div>
+    </div><div class="footer-bottom"><span>© 2026 Ember Phnom Penh</span><span>Burn beautifully. Tread lightly.</span></div></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+  </body>
+</html>

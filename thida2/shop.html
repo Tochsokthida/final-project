@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore small-batch scented candles inspired by Phnom Penh evenings." />
+    <title>Shop | Ember Phnom Penh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-wordmark" href="./index.html"><span>Ember</span><small>Phnom Penh</small></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#emberNav" aria-controls="emberNav" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-label">Menu</span><i class="bi bi-list ms-2"></i></button>
+        <div class="collapse navbar-collapse" id="emberNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tips.html">Candle tips</a></li>
+          </ul>
+          <div class="nav-actions"><a href="./login.html" aria-label="Sign in or create an account"><i class="bi bi-person"></i></a><a href="./cart.html" aria-label="View shopping cart"><i class="bi bi-bag"></i><span class="nav-cart-count" data-nav-cart-count hidden>0</span></a></div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero page-hero--shop">
+        <div class="container">
+          <div class="row align-items-end g-4">
+            <div class="col-lg-8"><p class="eyebrow">The candle collection</p><h1>Choose your<br />kind of quiet.</h1></div>
+            <div class="col-lg-4"><p class="page-hero__copy">Six small-batch scents, poured with plant wax and designed to settle gently into your space.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-collection section-pad bg-cream" id="collection">
+        <div class="container">
+          <div class="shop-toolbar">
+            <div class="filter-list" aria-label="Filter candles by scent family">
+              <button class="active" type="button" data-filter="All" aria-pressed="true">All</button>
+              <button type="button" data-filter="Earthy" aria-pressed="false">Earthy</button>
+              <button type="button" data-filter="Floral" aria-pressed="false">Floral</button>
+              <button type="button" data-filter="Citrus" aria-pressed="false">Citrus</button>
+              <button type="button" data-filter="Fresh" aria-pressed="false">Fresh</button>
+            </div>
+            <div class="bag-count" aria-live="polite"><i class="bi bi-bag"></i><span data-bag-count>0 items</span></div>
+          </div>
+
+          <div class="row g-4 g-lg-5">
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Earthy">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/afterrain.jpg" alt="After Rain scented candle" style="object-position:50% 52%" /><span class="shop-card__mood">Earthy</span><span class="shop-card__index">01</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>After Rain</h2><p>Vetiver · Moss · Wet stone</p></div><strong>$28</strong></div><div class="shop-card__footer"><span>220 g · 45 hr</span><button class="add-to-bag" data-product="After Rain" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Floral">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/candle-white.jpg" alt="Silk Evening scented candle" style="object-position:50% 48%" /><span class="shop-card__mood">Floral</span><span class="shop-card__index">02</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>Silk Evening</h2><p>Jasmine · Saffron · Sandalwood</p></div><strong>$32</strong></div><div class="shop-card__footer"><span>220 g · 45 hr</span><button class="add-to-bag" data-product="Silk Evening" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Earthy">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/candle-green.jpg" alt="Tonlé Dusk scented candle" style="object-position:50% 56%" /><span class="shop-card__mood">Earthy</span><span class="shop-card__index">03</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>Tonlé Dusk</h2><p>Tonka · Amber · Cedar</p></div><strong>$30</strong></div><div class="shop-card__footer"><span>220 g · 45 hr</span><button class="add-to-bag" data-product="Tonlé Dusk" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Citrus">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/candle-pomelo.jpg" alt="Pomelo Sun scented candle" style="object-position:50% 34%" /><span class="shop-card__mood">Citrus</span><span class="shop-card__index">04</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>Pomelo Sun</h2><p>Pomelo · Bergamot · White tea</p></div><strong>$26</strong></div><div class="shop-card__footer"><span>180 g · 38 hr</span><button class="add-to-bag" data-product="Pomelo Sun" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Fresh">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/candle-fig.jpg" alt="Fig Leaf scented candle" style="object-position:30% 50%" /><span class="shop-card__mood">Fresh</span><span class="shop-card__index">05</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>Fig Leaf</h2><p>Green fig · Tea leaf · Cypress</p></div><strong>$29</strong></div><div class="shop-card__footer"><span>220 g · 45 hr</span><button class="add-to-bag" data-product="Fig Leaf" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+            <article class="col-md-6 col-lg-4 shop-item" data-mood="Floral">
+              <div class="shop-card"><div class="shop-card__media"><img src="./public/images/candle-rose.jpg" alt="Rose Window scented candle" style="object-position:65% 50%" /><span class="shop-card__mood">Floral</span><span class="shop-card__index">06</span></div><div class="shop-card__body"><div class="d-flex justify-content-between gap-3"><div><h2>Rose Window</h2><p>Damask rose · Lychee · Soft musk</p></div><strong>$30</strong></div><div class="shop-card__footer"><span>220 g · 45 hr</span><button class="add-to-bag" data-product="Rose Window" type="button">Add to bag <span>+</span></button></div></div></div>
+            </article>
+          </div>
+          <div class="bag-toast" role="status" hidden><i class="bi bi-check2-circle"></i><span><strong data-toast-product></strong> added to your bag.</span><button type="button" data-dismiss-toast aria-label="Dismiss notification">×</button></div>
+        </div>
+      </section>
+
+      <section class="shop-promise">
+        <div class="container"><div class="row g-4 text-center">
+          <div class="col-md-4"><i class="bi bi-flower1"></i><h3>Plant-based wax</h3><p>A clean, even burn with a softly glowing melt pool.</p></div>
+          <div class="col-md-4"><i class="bi bi-hand-thumbs-up"></i><h3>Poured by hand</h3><p>Made in careful micro-batches in our Phnom Penh studio.</p></div>
+          <div class="col-md-4"><i class="bi bi-recycle"></i><h3>Made to reuse</h3><p>Clean the vessel and give it a beautiful second life.</p></div>
+        </div></div>
+      </section>
+
+      <section class="newsletter"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-6"><p class="eyebrow">Notes from the studio</p><h2>For scent stories, slow rituals, and first light on new pours.</h2></div><div class="col-lg-5 offset-lg-1"><form class="newsletter-form"><label class="visually-hidden" for="shop-email">Email address</label><input id="shop-email" type="email" placeholder="Your email address" required /><button type="submit">Join us <span>→</span></button></form><p class="newsletter__fine">Occasional letters only. No noise, no clutter.</p></div></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container"><div class="row g-5">
+      <div class="col-lg-5"><a class="brand-wordmark brand-wordmark--footer" href="./index.html"><span>Ember</span><small>Phnom Penh</small></a><p class="footer-mantra">Hand-poured light for soft rooms and slower evenings.</p></div>
+      <div class="col-6 col-lg-2 offset-lg-1"><p class="footer-title">Explore</p><a href="./shop.html">Shop all</a><a href="./about.html">Our story</a><a href="./tips.html">Candle care</a></div>
+      <div class="col-6 col-lg-2"><p class="footer-title">Visit</p><span>#608 N38 Phnom Penh</span><a href="mailto:hello@emberphnompenh.com">Email us</a><a href="https://www.instagram.com/opalite_candle?igsh=bXlmcDhpZjU5ZnZu&utm_source=qr" target="_blank" rel="noreferrer">Instagram</a></div>
+      <div class="col-lg-2"><p class="footer-title">Open</p><span>Tue–Sun</span><span>10:00–18:00</span></div>
+    </div><div class="footer-bottom"><span>© 2026 Ember Phnom Penh</span><span>Burn beautifully. Tread lightly.</span></div></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+  </body>
+</html>

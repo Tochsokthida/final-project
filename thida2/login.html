@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign in to your Ember Phnom Penh account." />
+    <title>Sign In | Ember Phnom Penh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-wordmark" href="./index.html"><span>Ember</span><small>Phnom Penh</small></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#emberNav" aria-controls="emberNav" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-label">Menu</span><i class="bi bi-list ms-2"></i></button>
+        <div class="collapse navbar-collapse" id="emberNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tips.html">Candle tips</a></li>
+          </ul>
+          <div class="nav-actions"><a class="active-action" href="./login.html" aria-label="Sign in or create an account"><i class="bi bi-person"></i></a><a href="./cart.html" aria-label="View shopping cart"><i class="bi bi-bag"></i><span class="nav-cart-count" data-nav-cart-count hidden>0</span></a></div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="auth-page">
+      <div class="auth-shell">
+        <section class="auth-visual auth-visual--login">
+          <div class="auth-visual__overlay"></div>
+          <div class="auth-visual__copy">
+            <p class="eyebrow text-light">Return to your ritual</p>
+            <blockquote>“Home is a feeling you can light.”</blockquote>
+            <span>Ember Phnom Penh</span>
+          </div>
+        </section>
+        <section class="auth-panel">
+          <div class="auth-panel__inner">
+            <p class="eyebrow">Your account</p>
+            <h1>Welcome back.</h1>
+            <p class="auth-intro">Sign in to revisit your candle selection and continue your quiet ritual.</p>
+            <form class="auth-form" data-auth-form="login" novalidate>
+              <div class="form-field">
+                <label for="login-email">Email address</label>
+                <input id="login-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <div class="d-flex justify-content-between align-items-center"><label for="login-password">Password</label><button class="form-text-button" type="button">Forgot password?</button></div>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" minlength="6" required />
+              </div>
+              <label class="check-row"><input type="checkbox" name="remember" /><span>Keep me signed in on this device</span></label>
+              <button class="btn btn-ember w-100" type="submit">Sign in <span>→</span></button>
+            </form>
+            <p class="auth-switch">New to Ember? <a href="./signup.html">Create an account</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/main.js"></script>
+  </body>
+</html>
